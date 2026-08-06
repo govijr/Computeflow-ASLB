@@ -45,7 +45,7 @@ bool add_notification_to_db(string event)
         headers = curl_slist_append(headers, apiKeyHeader.c_str());
         headers = curl_slist_append(headers, contentTypeHeader.c_str());
 
-        curl_easy_setopt(curl, CURLOPT_URL, "https://yakshit-chhipa-s-workspace-p8bvk5.eu-central-1.xata.sh/db/cheapcloud:main/tables/notifications/query");
+        curl_easy_setopt(curl, CURLOPT_URL, "https://govisdhjhdsjk-s-workspace-p8bvk5.eu-central-1.xata.sh/db/cheapcloud:main/tables/notifications/query");
         curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
         curl_easy_setopt(curl, CURLOPT_POSTFIELDS, std::string("{\"event\":\"" + event + "\"}"));
 
